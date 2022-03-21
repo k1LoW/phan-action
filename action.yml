@@ -1,5 +1,12 @@
 name: Phan
 description: GitHub Action for Phan
+inputs:
+  allow-failure:
+    description: Allow phan failures
+    default: false
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  env:
+    PHAN_ALLOW_FAILURE: ${{ inputs.allow-failure }}
