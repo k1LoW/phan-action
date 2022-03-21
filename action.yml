@@ -1,0 +1,5 @@
+name: Phan
+description: GitHub Action for Phan
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
