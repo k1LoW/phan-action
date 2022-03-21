@@ -3,8 +3,8 @@
 set -e
 
 if [ "$PHAN_ALLOW_FAILURE" = "0" ] || [ "$PHAN_ALLOW_FAILURE" = "false" ]; then
-    phan
+    phan --config-file ${PHAN_CONFIG_FILE}
 else
-    phan || true
+    phan --config-file ${PHAN_CONFIG_FILE} || true
 fi
 

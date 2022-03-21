@@ -1,6 +1,10 @@
 name: Phan
 description: GitHub Action for Phan
 inputs:
+  config-file:
+    description: A path to a config file to load
+    default: .phan/config.php
+    required: false
   allow-failure:
     description: Allow phan failures
     default: false
@@ -9,4 +13,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
+    PHAN_CONFIG_FILE: ${{ inputs.config-file }}
     PHAN_ALLOW_FAILURE: ${{ inputs.allow-failure }}

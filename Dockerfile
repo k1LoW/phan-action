@@ -16,4 +16,6 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 RUN composer global require phan/phan
 
+COPY entrypoint.sh /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
