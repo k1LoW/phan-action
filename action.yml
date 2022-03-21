@@ -1,4 +1,4 @@
-name: Phan
+name: Run Phan
 description: GitHub Action for Phan
 inputs:
   config-file:
