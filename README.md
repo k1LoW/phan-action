@@ -22,6 +22,6 @@ jobs:
         uses: actions/checkout@v2
       -
         name: Run Phan
-        run: k1LoW/phan-action@v0
+        uses: k1LoW/phan-action@v0
 ```
 
