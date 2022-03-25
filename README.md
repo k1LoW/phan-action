@@ -6,7 +6,7 @@ GitHub Action for [Phan](https://github.com/phan/phan)
 
 ``` yaml
 # .github/workflows/ci.yml
-name: Analysis PHP code
+name: Analysis PHP codes
 
 on:
   push:
